@@ -20,10 +20,7 @@ class Sighting:
     def get_all_sightings_with_users(cls):
         query = "SELECT * FROM sightings LEFT JOIN users on sightings.user_id = users.id;"
         results = connectToMySQL(cls.db_name).query_db(query)
-        sighting_list = []
-        for row in results:
-            sighting_list.append(cls(row))
-        return sighting_list
+        return results
 
     @classmethod
     def save(cls,data):

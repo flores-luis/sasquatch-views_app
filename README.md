@@ -1,1 +1,1 @@
-# sasquatch-views_app
+# Blog Post for Viewings of Saquatch or Big foot
